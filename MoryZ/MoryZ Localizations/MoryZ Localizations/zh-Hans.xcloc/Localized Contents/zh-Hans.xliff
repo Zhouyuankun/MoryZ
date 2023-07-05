@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.1" build-num="13A1030d"/>
+    </header>
+    <body>
+      <trans-unit id="%@" xml:space="preserve">
+        <source>%@</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld" xml:space="preserve">
+        <source>%lld</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add Item" xml:space="preserve">
+        <source>Add Item</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Appearance" xml:space="preserve">
+        <source>Appearance</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Apr." xml:space="preserve">
+        <source>Apr.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Aug." xml:space="preserve">
+        <source>Aug.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Create" xml:space="preserve">
+        <source>Create</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Dark Wallpaper" xml:space="preserve">
+        <source>Dark Wallpaper</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Dec." xml:space="preserve">
+        <source>Dec.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Diaries" xml:space="preserve">
+        <source>Diaries</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Diary" xml:space="preserve">
+        <source>Diary</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Display Mode" xml:space="preserve">
+        <source>Display Mode</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Done" xml:space="preserve">
+        <source>Done</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Export &amp; Import" xml:space="preserve">
+        <source>Export &amp; Import</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Feb." xml:space="preserve">
+        <source>Feb.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Fri." xml:space="preserve">
+        <source>Fri.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How about the mood today ?" xml:space="preserve">
+        <source>How about the mood today ?</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How about the weather today ?" xml:space="preserve">
+        <source>How about the weather today ?</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Is today meaningful ?" xml:space="preserve">
+        <source>Is today meaningful ?</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Jan." xml:space="preserve">
+        <source>Jan.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Jul." xml:space="preserve">
+        <source>Jul.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Jun." xml:space="preserve">
+        <source>Jun.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Light Wallpaper" xml:space="preserve">
+        <source>Light Wallpaper</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Mar." xml:space="preserve">
+        <source>Mar.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="May." xml:space="preserve">
+        <source>May.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Mon." xml:space="preserve">
+        <source>Mon.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Nov." xml:space="preserve">
+        <source>Nov.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Oct." xml:space="preserve">
+        <source>Oct.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sat." xml:space="preserve">
+        <source>Sat.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sep." xml:space="preserve">
+        <source>Sep.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Settings" xml:space="preserve">
+        <source>Settings</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sort inverse" xml:space="preserve">
+        <source>Sort inverse</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Sun." xml:space="preserve">
+        <source>Sun.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Tap label to change" xml:space="preserve">
+        <source>Tap label to change</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The date in history:" xml:space="preserve">
+        <source>The date in history:</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Thu." xml:space="preserve">
+        <source>Thu.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Title" xml:space="preserve">
+        <source>Title</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Tue." xml:space="preserve">
+        <source>Tue.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Wed." xml:space="preserve">
+        <source>Wed.</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="sample text" xml:space="preserve">
+        <source>sample text</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you may need a few minutes to save the photo in background" xml:space="preserve">
+        <source>you may need a few minutes to save the photo in background</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="en.lproj/MoryZ-InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.1" build-num="13A1030d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>MoryZ</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
