@@ -73,19 +73,21 @@ struct EditView: View {
                                 .onChange(of: diary.content, perform: { _ in
                                     try! viewContext.save()
                                 })
+                                .scrollIndicators(.hidden)
                 
                     
                 }
                     
             
                 .toolbar {
-                    ToolbarItemGroup(placement: .keyboard) {
-                        Spacer()
-                        Button(action: {
-                            focused = nil
-                            diary.lastModifiedTime = Date()
-                        }) {
-                            Text("Done")
+                    if focused != nil {
+                        ToolbarItemGroup(placement: .navigationBarTrailing) {
+                            Button(action: {
+                                focused = nil
+                                diary.lastModifiedTime = Date()
+                            }) {
+                                Text("Done")
+                            }
                         }
                     }
 

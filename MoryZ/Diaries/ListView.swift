@@ -22,6 +22,8 @@ struct ListView: View {
     //State: Background, Write Today Diary
     @State var photoBackground: UIImage? = nil
     
+    @State private var presentedDiaries = [Diary]()
+    
     
 
     @FetchRequest(
@@ -66,10 +68,6 @@ struct ListView: View {
         return newDiary
     }
     
-//    var displayedDiaries: [Diary] {
-//
-//    }
-    
     var searchResults: [Diary] {
             if searchText.isEmpty {
                 return diaries.filter { $0 === $0 }
@@ -79,35 +77,40 @@ struct ListView: View {
         }
     
     var body: some View {
-        NavigationView {
+        
+        NavigationStack(path: $presentedDiaries) {
             ScrollView {
                 Spacer()
                 
                 ForEach(searchResults) { diary in
-                    NavigationLink(destination: {
-                        if diary != nil {
-                            EditView(diary: diary)
-                        }
-                        
-                    }) {
+                    NavigationLink(value: diary) {
                         RowView(diary: diary, onSwipeAndTapped: { diary in
                             viewContext.delete(diary)
                             try! viewContext.save()
                         })
                     }
                 }
+                .navigationDestination(for: Diary.self) { diary in
+                    EditView(diary: diary)
+                }
                 
             }
-            .searchable(text: $searchText) {
-                ForEach(searchResults) { result in
-                    Text("Are you looking for \(result.title!)?").searchCompletion(result.title!)
-                                }
-            }
+            
+//                .searchable(text: $searchText) {
+//                    ForEach(searchResults) { result in
+//                        Text("Are you looking for \(result.title!)?").searchCompletion(result.title!)
+//                    }
+//                }
+            .background(
+                Image(uiImage: photoBackground ?? UIImage(named: "day")!)
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+            )
             .onAppear {
                 diaries.nsPredicate = nil
                 diaries.nsSortDescriptors = [NSSortDescriptor(keyPath: \Diary.date, ascending: ascending)]
                 diaries.nsPredicate = selectedPredicate.predicate
-                
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -125,23 +128,15 @@ struct ListView: View {
                     }
                 }
                 ToolbarItem {
-                    Button(action: {
-                        getOrCreateTodayDiary()
-
-                    }) {
+                    Button {
+                        presentedDiaries.append(getOrCreateTodayDiary())
+                    } label: {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
             }
             .navigationTitle("Diary")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarColor(backgroundColor: UIColor(named: "navigationBar")!, titleColor: .label)
-            .background(
-                Image(uiImage: photoBackground ?? UIImage(named: "day")!)
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-            )
             .onChange(of: colorScheme, perform: { newValue in
                 if newValue == .light {
                     if let wallpaperLightURL = wallpaperLightURL, let data = try?  Data(contentsOf: wallpaperLightURL) {
@@ -181,47 +176,6 @@ struct ListView_Previews: PreviewProvider {
         ListView().environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
             
     }
-}
-
-struct NavigationBarModifier: ViewModifier {
-
-    var backgroundColor: UIColor?
-    var titleColor: UIColor?
-
-    init(backgroundColor: UIColor?, titleColor: UIColor?) {
-        self.backgroundColor = backgroundColor
-        let coloredAppearance = UINavigationBarAppearance()
-        coloredAppearance.configureWithTransparentBackground()
-        coloredAppearance.backgroundColor = backgroundColor
-        coloredAppearance.titleTextAttributes = [.foregroundColor: titleColor ?? .white]
-        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: titleColor ?? .white]
-
-        UINavigationBar.appearance().standardAppearance = coloredAppearance
-        UINavigationBar.appearance().compactAppearance = coloredAppearance
-        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
-    }
-
-    func body(content: Content) -> some View {
-        ZStack{
-            content
-            VStack {
-                GeometryReader { geometry in
-                    Color(self.backgroundColor ?? .clear)
-                        .frame(height: geometry.safeAreaInsets.top)
-                        .edgesIgnoringSafeArea(.top)
-                    Spacer()
-                }
-            }
-        }
-    }
-}
-
-extension View {
-
-    func navigationBarColor(backgroundColor: UIColor?, titleColor: UIColor?) -> some View {
-        self.modifier(NavigationBarModifier(backgroundColor: backgroundColor, titleColor: titleColor))
-    }
-
 }
 
 // Width: 414.0

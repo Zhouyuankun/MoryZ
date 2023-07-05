@@ -214,8 +214,8 @@ struct SettingRowView: View {
         HStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 5)
+                    .fill(color.gradient)
                     .frame(width: 25, height: 25)
-                    .foregroundColor(color)
                 Image(systemName: icon)
                     .resizable()
                     .frame(width: 20, height: 20)
