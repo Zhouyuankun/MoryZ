@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Blue-sky-sunny-sky-ceiling-murals-Landscape-wallpaper-murals-ceilings-3d-stereoscopic-wallpaper-ceiling.jpg_Q90.jpg_.webp.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
