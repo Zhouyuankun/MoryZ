@@ -18,6 +18,7 @@
 		B6168FEA2757783B000D443F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6168FE92757783B000D443F /* SettingsView.swift */; };
 		B6168FEC2757818E000D443F /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6168FEB2757818E000D443F /* EditView.swift */; };
 		B6168FEE275789C6000D443F /* BevelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6168FED275789C6000D443F /* BevelTextView.swift */; };
+		B694F09B2A55910A0089243E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B694F09A2A55910A0089243E /* README.md */; };
 		B6996BDD2782E752008AD701 /* ChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6996BDC2782E752008AD701 /* ChooserView.swift */; };
 		B69D56B127625CCF007D0DAF /* SettingsWallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69D56B027625CCF007D0DAF /* SettingsWallpaperView.swift */; };
 		B69D56B32762D525007D0DAF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69D56B22762D525007D0DAF /* ImagePicker.swift */; };
@@ -43,6 +44,7 @@
 		B6168FE92757783B000D443F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B6168FEB2757818E000D443F /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		B6168FED275789C6000D443F /* BevelTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BevelTextView.swift; sourceTree = "<group>"; };
+		B694F09A2A55910A0089243E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B6996BDC2782E752008AD701 /* ChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooserView.swift; sourceTree = "<group>"; };
 		B69D56B027625CCF007D0DAF /* SettingsWallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWallpaperView.swift; sourceTree = "<group>"; };
 		B69D56B22762D525007D0DAF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		B6168FC227570A36000D443F = {
 			isa = PBXGroup;
 			children = (
+				B694F09A2A55910A0089243E /* README.md */,
 				B6168FCD27570A36000D443F /* MoryZ */,
 				B6168FCC27570A36000D443F /* Products */,
 			);
@@ -219,6 +222,7 @@
 			files = (
 				B6168FD627570A37000D443F /* Preview Assets.xcassets in Resources */,
 				B6EE66902782BC4800E8B0EE /* LaunchScreen.storyboard in Resources */,
+				B694F09B2A55910A0089243E /* README.md in Resources */,
 				B6168FD327570A37000D443F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
